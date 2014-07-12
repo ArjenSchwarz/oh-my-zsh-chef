@@ -5,6 +5,7 @@ source $HOME/.profile
 <% end %>
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+<%= @theme_settings %>
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -38,4 +39,4 @@ plugins=(<%= @plugins.join(' ') %>)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+<%= @settings %>
